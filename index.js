@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 router.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname+'/src/index.html'))
+	res.sendFile(path.join(__dirname+'/public/index.html'))
 })
 
 app.get('/login', (req, res) => {
-	res.sendFile(__dirname + '/src/login.html');
+	res.sendFile(__dirname + '/public/login.html');
   });
 
 
